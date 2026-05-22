@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pb506a7sh0apX0M5CwhSgw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="lego.com/en-lt" DesignTimeRectangle="1332, 249, 308, 51" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='desktop-search-search-input' tag='INPUT' /&gt;" Guid="d99bb5f9-3080-4695-b7b9-f9591b793010" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Official LEGO® Shop LT' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d3c23728b8576ba13e55f1cbec5791d5.jpg" xmlns="">02R--DWG1N0SGq--d_jXcsw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_hgNR2CM_EGjFBmeMB2Vtg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="varle.lt" DesignTimeRectangle="577, 397, 778, 138" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='svelte-1ck5cux' parentclass='search-item svelte-1ck5cux' /&gt;" Guid="f3fa0dcf-2b53-43c3-9a8f-df1fe17bd953" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Prekybos centras internete | Varle.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="1a294881000a632a6f25b1f9d4b900b6.jpg" xmlns="">0m0aW77aW_U6yigQpkZE1YA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

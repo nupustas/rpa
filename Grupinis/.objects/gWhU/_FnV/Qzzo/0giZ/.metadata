@@ -1,0 +1,14 @@
+﻿{
+  "Name": "pigu.ltltkudikiams-ir…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "0giZrp9pvkGlCFOG3parbQ",
+  "Reference": "dZFYe9SHv0CKKJnFTJQvrg/0giZrp9pvkGlCFOG3parbQ",
+  "ParentRef": "dZFYe9SHv0CKKJnFTJQvrg/QzzoKrDFq0SDBmO5pvv4_Q",
+  "Created": "2026-05-21T15:59:46.3910531Z",
+  "Updated": "2026-05-21T15:59:46.3910531Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

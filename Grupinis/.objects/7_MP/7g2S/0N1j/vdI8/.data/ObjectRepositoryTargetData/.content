@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="mokJToULQkWsmrdpkTfzUw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="varle.lt/lego/lego-besisupantys-augalai--53770717.html" DesignTimeRectangle="1295, 391, 168, 87" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='price-mid-section' tag='DIV' parentclass='price-tag' /&gt;" Guid="b4b9642c-188e-4daf-b422-6fdfdd80147c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO® Besisupantys augalai, modelis - 11506, žema kaina | Varle.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="2dea4680f510d89690cf5339e2382327.jpg" xmlns="">0GQl3Pj1AuUuMQ1PAQ3x2VQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

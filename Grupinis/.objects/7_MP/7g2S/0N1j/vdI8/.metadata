@@ -1,0 +1,13 @@
+﻿{
+  "Name": "14.76  €",
+  "Type": "Element",
+  "Id": "vdI8js2euke_jGlsH2EIxg",
+  "Reference": "dZFYe9SHv0CKKJnFTJQvrg/vdI8js2euke_jGlsH2EIxg",
+  "ParentRef": "dZFYe9SHv0CKKJnFTJQvrg/0N1jr3lEB0KaJTPQjAmb_A",
+  "Created": "2026-05-21T22:21:35.0798794Z",
+  "Updated": "2026-05-21T22:21:35.0798794Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

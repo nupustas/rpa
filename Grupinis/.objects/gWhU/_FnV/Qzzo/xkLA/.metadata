@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Įprasta kaina",
+  "Type": "Element",
+  "Id": "xkLAuTbofEaNiw6P-GThnQ",
+  "Reference": "dZFYe9SHv0CKKJnFTJQvrg/xkLAuTbofEaNiw6P-GThnQ",
+  "ParentRef": "dZFYe9SHv0CKKJnFTJQvrg/QzzoKrDFq0SDBmO5pvv4_Q",
+  "Created": "2026-05-21T20:00:12.8625712Z",
+  "Updated": "2026-05-21T20:00:12.8625712Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2tXWI1zBLkCHwN1ukYYKyw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="lego.com/en-lt" DesignTimeRectangle="1298, 307, 377, 117" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;div&amp;gt;li&amp;gt;a&amp;gt;div' parentid='desktop-search-search-suggestions' tag='DIV' /&gt;" Guid="6cedebe5-b352-4131-afac-0d3e7e6f0fd0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home | Official LEGO® Shop LT' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="3159cc7d47d9aa26610f607b6e06a5c9.jpg" xmlns="">0wRRxd1Z6ZEe05XS6bgE0MQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

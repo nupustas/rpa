@@ -1,0 +1,14 @@
+﻿{
+  "Name": "varle.ltlegolego-crea…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "edGWVaNllk6NWJSF3nuZ7g",
+  "Reference": "dZFYe9SHv0CKKJnFTJQvrg/edGWVaNllk6NWJSF3nuZ7g",
+  "ParentRef": "dZFYe9SHv0CKKJnFTJQvrg/0N1jr3lEB0KaJTPQjAmb_A",
+  "Created": "2026-05-21T18:49:04.4248156Z",
+  "Updated": "2026-05-21T18:49:04.4248156Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vnMJ-nnIkUuLmiD7bT5MFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pigu.lt/lt/kudikiams-ir-vaikams/zaislai/konstruktoriai-ir-kaladeles/lego-editions-football-fifa-world-cup-oficiali" DesignTimeRectangle="1678, 638, 91, 40" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='c-price h-price--x-large' matching:class='fuzzy' fuzzylevel:class='0.0' parentclass='c-product__price-block' matching:parentclass='fuzzy' fuzzylevel:parentclass='0.0' /&gt;" Guid="30b03e46-dbe6-4edc-90a8-c1254c084e8d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO® Editions Football „FIFA World Cup™“ oficiali taurė 43020 | pigu.lt' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="599969a3b3a70240ae7273faf838a1bf.jpg" xmlns="">0vGPbcqqaI0OO1paVrBSz6g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

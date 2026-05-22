@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LGIPBa8X20mAMSjrNCOz1g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pigu.lt/lt/kudikiams-ir-vaikams/zaislai/konstruktoriai-ir-kaladeles/lego-editions-football-fifa-world-cup-oficiali" DesignTimeRectangle="1478, 441, 180, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl visibleinnertext='Pigu PLUS kaina ' /&gt;" Guid="40401f81-d7b9-4801-a369-56ee8aca36a8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO® Editions Football „FIFA World Cup™“ oficiali taurė 43020 | pigu.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="b72a1b9094ea78443a1052ab92169390.jpg" xmlns="">0t9poOzEzJkCBwaIUIHWO9Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

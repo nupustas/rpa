@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="VcC8qJGhrUSDWqw8kAS5MQ" Reference="dZFYe9SHv0CKKJnFTJQvrg/0N1jr3lEB0KaJTPQjAmb_A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1098" BrowserType="Chrome" ContentHash="Scv0XAHQdEmJD6tDHm78Mw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADmSURBVDhP7Y8xSsZAFIRXTyB2gmgy6wm8go3YWVgogq1aCtqIEMF259l6AmurN4uFF7Cxs/pvYGejCJEVDX/CHy+gHwwszJthNoR/Ouhx2xTPzLE79AptG+bo8dQU75jjQc+8vscKHcflnRwb9PomORo6MjNuKVya4hWFp+T1DoVXanmxK7CHaiFlHH0XbFFoR/RMYY/Cm2l1aWpDCBQmJjxS+JgRHGrSC3/9T3ifcTiqpgnzvRIKh8OjMZmQeuEfktf7Zd4wMKUXU7woi4fZjmKaVxUVN5PjJOX6vBSb1tZ/Df5hPgHx3MAMVkVABwAAAABJRU5ErkJggg==" Reference="dZFYe9SHv0CKKJnFTJQvrg/0N1jr3lEB0KaJTPQjAmb_A" Selector="&lt;html app='chrome.exe' title='Prekybos centras internete | Varle.lt' /&gt;" Url="https://www.varle.lt/" Version="V3">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="81a5057904922334d6a831ffa539b07b.jpg" xmlns="">0xFTnicazq0CXSShRGkAAFg</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

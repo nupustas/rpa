@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Pigu.lt – internetinė parduotuvė tavo kasdieniams pirkiniams",
+  "Type": "App",
+  "Id": "gWhUre8eVk2U6sbj6D-62Q",
+  "Reference": "dZFYe9SHv0CKKJnFTJQvrg/gWhUre8eVk2U6sbj6D-62Q",
+  "Created": "2026-05-21T15:35:34.896504Z",
+  "Updated": "2026-05-21T15:35:34.896504Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

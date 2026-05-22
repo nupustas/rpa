@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TMzHpx8ULE6pMT2gf96rEA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="lego.com/en-lt/product/exotic-parrot-31136" DesignTimeRectangle="1404, 522, 466, 41" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='main-content' tag='SPAN' type='' class='ProductPrice_priceText__VyKYv ds-heading-lg' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="ffdbe9d4-e625-4f62-8b52-3fdb8a64ab88" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exotic Parrot 31136 | Creator 3-in-1 | Buy online at the Official LEGO® Shop LT' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1404, 691, 381, 60" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Add to Bag' tag='BUTTON' type='button' class='sk-button sk-button--primary sk-button--large sk-button--emphasis sk-button--full-width -_VRTG_responsive-icon-size -_VRTG_icon-left' aaname='Add to Bag' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Add to Bag' /&gt;" Guid="baca9c7d-5caf-44d9-9db7-f9afb1f408ec" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ced830eca8cf6cedfdd9a6578ac93610.jpg" xmlns="">0gs07-VWjoUC7UoKKiIlg7A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

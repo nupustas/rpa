@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WLyLh0w7pUaAgVFSCL19qw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="varle.lt/lego/lego-icons-mclaren-mp44-ir-ayrton-senna-10330--32593893.html" DesignTimeRectangle="1578, 391, 58, 27" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='previous-price' parentclass='discount-line' /&gt;" Guid="35c52af3-b7eb-489b-a6de-acd524759721" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO® Icons McLaren MP4 / 4 ir Ayrton Senna (10330), modelis - 10330, žema kaina | Varle.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="307d676a1b9b1279c22c4f4606282ec7.jpg" xmlns="">0Qxtfsn8EZEe_4mzNFUmkUQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fDZ083dVeEKb78Hl0jeK_Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="varle.lt/lego/lego-icons-mclaren-mp44-ir-ayrton-senna-10330--32593893.html" DesignTimeRectangle="617, 577, 100, 19" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="6d5cbf05-6701-4e7b-8fe1-6e892e7e52c4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO® Icons McLaren MP4 / 4 ir Ayrton Senna (10330), modelis - 10330, žema kaina | Varle.lt' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="583, 574, 31, 22" FullSelectorArgument="&lt;webctrl class='stock-icon' tag='SPAN' /&gt;" Guid="7c7fe734-098d-4546-8bd2-84c692bd8dcb" SearchSteps="Selector" />
+          <Target DesignTimeRectangle="467, 216, 662, 50" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="3023bbe0-25be-4641-b355-2277e389e959" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="464cf81d37968c84f6eeb2d182824887.jpg" xmlns="">0gKtLZx3YLESoI3LYsMHQvg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

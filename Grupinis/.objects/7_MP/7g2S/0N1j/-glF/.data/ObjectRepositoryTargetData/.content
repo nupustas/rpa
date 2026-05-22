@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="E3HzC4_kYEGkg6IrlVasVw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="varle.lt/robotai-ismanus-zaislai/lego-minecraft-lis-21588--53525886.html" DesignTimeRectangle="1577, 456, 56, 27" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='previous-price' tag='SPAN' /&gt;" Guid="1cc062b1-e5ec-4b1e-88bd-fc9227d13a19" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO MINECRAFT Lis 21588, modelis - 21588, žema kaina | Varle.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8f8f52a3b6fd85503e768310455c7560.jpg" xmlns="">06xDxDmlXv0ekgekPLfkcQg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

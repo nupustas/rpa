@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="n2_s7_z-XUaHn_4GLeVceQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="varle.lt/lego/lego-editions-fifa-world-cuptm-oficiali-taure--50253636.html" DesignTimeRectangle="1298, 401, 122, 68" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='price-value' itemprop='pricenew' parentclass='price-mid-section' /&gt;" Guid="e81f340d-f19e-4de7-86f4-ccea3a8f0bdc" ScopeSelectorArgument="&lt;html app='chrome.exe' title='„LEGO® Editions“ „FIFA World Cup™“ oficiali taurė, 43020, modelis - 43020, žema kaina | Varle.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="f66756868ebfe9b663755eb9fff1cc68.jpg" xmlns="">0EsCowOj1aEKYqZt3jKxKng</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

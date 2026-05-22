@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0kCKmbbwY02e7Q4r99gacw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="lego.com/en-lt/product/exotic-parrot-31136" CVScreenId="12b7122c-c8ca-4e28-b17d-db0afa69cac1" CvElementArea="152, 65, 1595, 44" CvType="InputBox" DesignTimeRectangle="207, 73, 1455, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Exotic Parrot 31136 | Creator 3-in-1 | Buy online at the Officia*' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" Guid="d2c23e2c-c200-4862-9d7b-7ba903e97cfb" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Exotic Parrot 31136 | Creator 3-in-1 | Buy online at the Officia*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="160, 117, 101, 36" ElementType="Button" FuzzySelectorArgument="&lt;ctrl name='Exotic Parrot 31136 | Creator 3-in-1 | Buy online at the Officia*' role='pane' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Bookmarks' role='tool bar' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='YouTube' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='YouTube' /&gt;" Guid="af800b02-349d-4df1-a645-fc8a76030480" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="df3ecca7399c9f45bf31be584c09d8c6.jpg" xmlns="">0MwNoGloL6kuyOPQ8ftNX1g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

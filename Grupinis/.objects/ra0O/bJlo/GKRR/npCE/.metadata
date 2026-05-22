@@ -1,0 +1,14 @@
+﻿{
+  "Name": "lego.comen-ltproduct…",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "npCEi08Ci0W7LezjIRGOAg",
+  "Reference": "dZFYe9SHv0CKKJnFTJQvrg/npCEi08Ci0W7LezjIRGOAg",
+  "ParentRef": "dZFYe9SHv0CKKJnFTJQvrg/GKRRAhLTtEG03pmdMCVATg",
+  "Created": "2026-05-21T19:13:58.3046079Z",
+  "Updated": "2026-05-21T19:13:58.3046079Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PLfK6KPj7kOMMP8kp1Lo0w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pigu.lt/lt/kudikiams-ir-vaikams/zaislai/konstruktoriai-ir-kaladeles/lego-minecraft-lape-21588" CVScreenId="2a253067-1847-4586-b4a7-3e16ad1f4b68" CvElementArea="155, 65, 1570, 43" CvType="InputBox" DesignTimeRectangle="207, 73, 1375, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='LEGO - Minecraft - The Fox (21588) | pigu.lt - Google Chrome - G*' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' aastate='focusable, editable, opaque, selectable text, singleline, autocomplete' /&gt;" Guid="8ecd109f-54b1-4f58-bac6-b32a1f35151c" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='LEGO - Minecraft - The Fox (21588) | pigu.lt - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="160, 117, 101, 36" ElementType="Button" FuzzySelectorArgument="&lt;ctrl name='LEGO - Minecraft - The Fox (21588) | pigu.lt - Google Chrome - G*' role='pane' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Bookmarks' role='tool bar' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='YouTube' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='YouTube' /&gt;" Guid="a06389c5-469c-4394-9d21-515696b5752f" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e95683473c31a071bee1739138ce51f9.jpg" xmlns="">0RZoN31AYCk6jpH--ZJVCuQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

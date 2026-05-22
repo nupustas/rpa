@@ -1,0 +1,14 @@
+﻿{
+  "Name": "LEGO® Botanicals Žydint…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "7G5gyjy4WUK7A186exvwiA",
+  "Reference": "dZFYe9SHv0CKKJnFTJQvrg/7G5gyjy4WUK7A186exvwiA",
+  "ParentRef": "dZFYe9SHv0CKKJnFTJQvrg/0N1jr3lEB0KaJTPQjAmb_A",
+  "Created": "2026-05-21T22:04:40.3255137Z",
+  "Updated": "2026-05-21T22:04:40.3255137Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

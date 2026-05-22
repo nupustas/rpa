@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wSskFbVcXkGQi4LJK2Bugw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="varle.lt" DesignTimeRectangle="577, 397, 778, 138" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' LEGO® Creator 3-in-1 Egzotiška papūga (31136) 18. 57  € ' tag='A' /&gt;" Guid="1551b70a-3bcc-470f-9a2a-5cc7eb99e4d3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Prekybos centras internete | Varle.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1a294881000a632a6f25b1f9d4b900b6.jpg" xmlns="">04gEfgqvdBEisu2C4cFq0Eg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

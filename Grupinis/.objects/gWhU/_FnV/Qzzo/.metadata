@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Pigu.lt – internetinė parduotuvė tavo ",
+  "Type": "Screen",
+  "Id": "QzzoKrDFq0SDBmO5pvv4_Q",
+  "Reference": "dZFYe9SHv0CKKJnFTJQvrg/QzzoKrDFq0SDBmO5pvv4_Q",
+  "ParentRef": "dZFYe9SHv0CKKJnFTJQvrg/_FnVsvtfs0mCvMRmS-SSMA",
+  "Created": "2026-05-21T15:35:35.126342Z",
+  "Updated": "2026-05-21T15:35:35.126342Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

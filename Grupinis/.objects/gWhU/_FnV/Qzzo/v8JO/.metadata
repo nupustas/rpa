@@ -1,0 +1,13 @@
+﻿{
+  "Name": "1811 €",
+  "Type": "Element",
+  "Id": "v8JOmTuAK0OrxaQ64iFmNw",
+  "Reference": "dZFYe9SHv0CKKJnFTJQvrg/v8JOmTuAK0OrxaQ64iFmNw",
+  "ParentRef": "dZFYe9SHv0CKKJnFTJQvrg/QzzoKrDFq0SDBmO5pvv4_Q",
+  "Created": "2026-05-21T15:46:42.7181474Z",
+  "Updated": "2026-05-21T15:46:42.7181474Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="oUGdel1KcEayVNBIsXV5ZA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="varle.lt/lego/lego-creator-exotic-parrot--22946745.html" DesignTimeRectangle="1318, 401, 90, 68" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='price-value' tag='SPAN' /&gt;" Guid="481460cf-9141-47c1-a8b0-7d378fae773b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO® Creator 3-in-1 Egzotiška papūga (31136), modelis - 31136, žema kaina | Varle.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="988a626bf98a93e1f7c0561ae5b93849.jpg" xmlns="">0cn9xxPUETUuGeSXsYm6hqQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

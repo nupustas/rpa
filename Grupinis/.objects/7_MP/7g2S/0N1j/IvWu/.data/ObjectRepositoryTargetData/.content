@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="s-MbW4bWjkaK56fX43-6tA" Reference="dZFYe9SHv0CKKJnFTJQvrg/IvWu2es3pEynmjdIuHlCPA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="varle.lt/lego/lego-botanicals-zydintis-kaktusas-augalu-dekoras--50745550.html" DesignTimeRectangle="1318, 401, 88, 68" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='price-value' itemprop='pricenew' parentclass='price-mid-section' /&gt;" Guid="c85337c3-7caa-4789-9dd7-fc4081c1002a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO® Botanicals Žydintis kaktusas Augalų dekoras 11509, modelis - 11509, žema kaina | Varle.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="aa542cb41995be298926ca66339e0bfc.jpg" xmlns="">0uhWBWwtqrE-umH9qjMNUDA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

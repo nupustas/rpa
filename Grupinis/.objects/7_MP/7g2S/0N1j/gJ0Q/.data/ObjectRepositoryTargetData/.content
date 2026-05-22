@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-qWgXUTLrUOu5hArrOBGjA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="varle.lt" CVScreenId="502ec84e-f85c-4865-94ff-26efbdd48517" CvElementArea="151, 65, 1594, 44" CvType="InputBox" DesignTimeRectangle="207, 73, 1415, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Prekybos centras internete | Varle.lt - Google Chrome - Guest' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" Guid="a617b38d-262c-4c9b-967a-fb9e3ddf886e" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Prekybos centras internete | Varle.lt - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="160, 117, 101, 36" ElementType="Button" FuzzySelectorArgument="&lt;ctrl name='Prekybos centras internete | Varle.lt - Google Chrome - Guest' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Bookmarks' role='tool bar' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='YouTube' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='YouTube' /&gt;" Guid="a48456d4-11ef-444f-a9e1-615b9ec035af" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="17072d515b2386f3f2cc3b29a76f5bea.jpg" xmlns="">0sDn1Se_BTUWKIih2gynlbw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UB3q6CvXckmZPvzmHqUKjA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pigu.lt/lt/kudikiams-ir-vaikams/zaislai/konstruktoriai-ir-kaladeles/lego-creator-egzotiska-papuga-31136" DesignTimeRectangle="1478, 526, 134, 40" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='SPAN' class='c-price h-price--x-large h-price--loyalty' parentclass='c-product__price-block' uipath-html-title='Lojalumo kaina – nustatyta prekės kaina, kuri galioja tik „Pigu PLUS“ lojalumo programos nariams.' visibleinnertext='18&amp;#xA;11&amp;#xA;€' /&gt;" Guid="cbf8698b-dc11-40c8-b7ef-24257c75098c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Konstruktorius - LEGO Creator 31136 Ekzotinė Papūga 253 Dalys 220mm Aukštis | pigu.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="3b9b1419e166b91a5369b2f45bd820d5.jpg" xmlns="">0axk-zhSlDUW1xG5dwQGQqg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

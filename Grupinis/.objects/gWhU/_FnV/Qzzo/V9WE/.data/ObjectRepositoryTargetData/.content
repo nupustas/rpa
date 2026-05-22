@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="o13QtIA7CEul8txc--kRdw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pigu.lt/lt" DesignTimeRectangle="968, 267, 499, 102" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='product_suggestion_0' tag='A' /&gt;" Guid="4e369a30-36cc-41c8-ac2d-b9034af04cc9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pigu.lt – internetinė parduotuvė tavo kasdieniams pirkiniams' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="995e12c1b261f9d9b0c34f3db5220765.jpg" xmlns="">062E9nXul4E2zddpW2pj_2g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

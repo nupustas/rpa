@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7RWAx58IekKbb0cb6BO0UQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pigu.lt/lt/kudikiams-ir-vaikams/zaislai/konstruktoriai-ir-kaladeles/lego-editions-football-fifa-world-cup-oficiali" DesignTimeRectangle="1478, 471, 151, 40" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='c-price h-price--x-large h-price--loyalty' uipath-html-title='Lojalumo kaina – nustatyta prekės kaina, kuri galioja tik „Pigu PLUS“ lojalumo programos nariams.' /&gt;" Guid="6d018b1b-ea75-48f7-8cc8-0db12300c500" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO® Editions Football „FIFA World Cup™“ oficiali taurė 43020 | pigu.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="52af2d567fe81aa76f252cd88eeb456d.jpg" xmlns="">0CBQXG9Y5AEWs8qWwycXk5A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
