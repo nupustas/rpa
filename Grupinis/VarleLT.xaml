@@ -142,19 +142,19 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="VarleLT" sap:VirtualizedContainerService.HintSize="914,1917.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="VarleLT" sap:VirtualizedContainerService.HintSize="914,2152.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Prekybos centras internete  Varle.lt" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1894.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0b0dd988-bee8-452c-b1d5-69524b5b53a0" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Prekybos centras internete  Varle.lt" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,2129.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0b0dd988-bee8-452c-b1d5-69524b5b53a0" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1700.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1936" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="raw_kaina" />
             </Sequence.Variables>
@@ -236,7 +236,7 @@
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">System.Text.RegularExpressions.Regex.Replace(out_kainaSuNuolaida, @"\D*(\d+)(\d{2})\D*", "$1,$2")</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">System.Text.RegularExpressions.Regex.Replace(out_kainaSuNuolaida, @"\D*(\d+)(\d{2})\D*", "$1.$2")</CSharpValue>
                       </InArgument>
                     </Assign.Value>
                   </Assign>
@@ -281,7 +281,7 @@
               <uix:NGetText.Target>
                 <uix:TargetAnchorable BrowserURL="varle.lt/lego/lego-icons-mclaren-mp44-ir-ayrton-senna-10330--32593893.html" ContentHash="fDZ083dVeEKb78Hl0jeK_Q" DesignTimeRectangle="617, 577, 100, 19" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="6d5cbf05-6701-4e7b-8fe1-6e892e7e52c4" InformativeScreenshot="464cf81d37968c84f6eeb2d182824887.jpg" Reference="dZFYe9SHv0CKKJnFTJQvrg/ZR4ZZX90S0GSDPOYzJS0rg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO® Icons McLaren MP4 / 4 ir Ayrton Senna (10330), modelis - 10330, žema kaina | Varle.lt' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                       <uix:Target DesignTimeRectangle="583, 574, 31, 22" FullSelectorArgument="&lt;webctrl class='stock-icon' tag='SPAN' /&gt;" Guid="7c7fe734-098d-4546-8bd2-84c692bd8dcb" SearchSteps="Selector" />
                       <uix:Target DesignTimeRectangle="467, 216, 662, 50" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="3023bbe0-25be-4641-b355-2277e389e959" SearchSteps="Selector" />
                     </scg:List>
@@ -294,7 +294,7 @@
                 </OutArgument>
               </uix:NGetText.TextString>
             </uix:NGetText>
-            <Assign DisplayName="Apdorojam įprastą kainą" sap:VirtualizedContainerService.HintSize="451.2,56.8" sap2010:WorkflowViewState.IdRef="Assign_17">
+            <Assign DisplayName="Apdorojam įprastą kainą" sap:VirtualizedContainerService.HintSize="451.2,174.4" sap2010:WorkflowViewState.IdRef="Assign_17">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">out_kaina</CSharpReference>
@@ -302,12 +302,12 @@
               </Assign.To>
               <Assign.Value>
                 <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">System.Text.RegularExpressions.Regex.Replace(out_kaina, @"[^\d.,]", "").Replace(".", ",")</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">System.Text.RegularExpressions.Regex.Replace(out_kaina, @"[^\d.,]", "")</CSharpValue>
                 </InArgument>
               </Assign.Value>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -319,7 +319,7 @@
                 </OutArgument>
               </uix:NGetUrl.CurrentUrl>
             </uix:NGetUrl>
-            <Assign sap:VirtualizedContainerService.HintSize="451.2,48" sap2010:WorkflowViewState.IdRef="Assign_16">
+            <Assign sap:VirtualizedContainerService.HintSize="451.2,165.6" sap2010:WorkflowViewState.IdRef="Assign_16">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">out_siuntimoKaina</CSharpReference>
@@ -327,12 +327,12 @@
               </Assign.To>
               <Assign.Value>
                 <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">"3,90"</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">"3.90"</CSharpValue>
                 </InArgument>
               </Assign.Value>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>

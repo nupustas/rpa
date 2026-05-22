@@ -203,7 +203,7 @@
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">System.Text.RegularExpressions.Regex.Replace(raw_kaina, @"\D*(\d+)(\d{2})\D*", "$1,$2")</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">System.Text.RegularExpressions.Regex.Replace(raw_kaina, @"\D*(\d+)(\d{2})\D*", "$1.$2")</CSharpValue>
                       </InArgument>
                     </Assign.Value>
                   </Assign>
@@ -225,7 +225,7 @@
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">System.Text.RegularExpressions.Regex.Replace(raw_kaina, @"\D*(\d+)(\d{2})\D*", "$1,$2")</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">System.Text.RegularExpressions.Regex.Replace(raw_kaina, @"\D*(\d+)(\d{2})\D*", "$1.$2")</CSharpValue>
                       </InArgument>
                     </Assign.Value>
                     <sap:WorkflowViewStateService.ViewState>
@@ -275,7 +275,7 @@
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">System.Text.RegularExpressions.Regex.Replace(raw_kaina, @"\D*(\d+)(\d{2})\D*", "$1,$2")</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">System.Text.RegularExpressions.Regex.Replace(raw_kaina, @"\D*(\d+)(\d{2})\D*", "$1.$2")</CSharpValue>
                       </InArgument>
                     </Assign.Value>
                   </Assign>
