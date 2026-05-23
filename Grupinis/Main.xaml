@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -40,6 +40,7 @@
       <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -102,6 +103,14 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -109,18 +118,46 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="673.2,3620" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="914,2017.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="KainaSuNuolaida" />
+      <Variable x:TypeArguments="x:String" Name="KainaSuNuolaida">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" xml:space="preserve"> </Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="sd:DataTable" Name="Isvestis" />
       <Variable x:TypeArguments="sd:DataTable" Name="ParduotuviuSarasas" />
       <Variable x:TypeArguments="sd:DataTable" Name="PrekiuSarasas" />
-      <Variable x:TypeArguments="x:String" Name="Preke" />
-      <Variable x:TypeArguments="x:String" Name="Parduotuve" />
-      <Variable x:TypeArguments="x:String" Name="Nuoroda" />
-      <Variable x:TypeArguments="x:String" Name="SiuntimoKaina" />
-      <Variable x:TypeArguments="x:String" Name="Kaina" />
-      <Variable x:TypeArguments="x:String" Name="Likutis" />
+      <Variable x:TypeArguments="x:String" Name="Preke">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" xml:space="preserve"> </Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="Parduotuve">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" xml:space="preserve"> </Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="Nuoroda">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" xml:space="preserve"> </Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="SiuntimoKaina">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" xml:space="preserve"> </Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="Kaina">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" xml:space="preserve"> </Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="Likutis">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" xml:space="preserve"> </Literal>
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -130,92 +167,276 @@
     <ui:BuildDataTable DisplayName="Sukuriam išvesties lentelę" sap:VirtualizedContainerService.HintSize="521.6,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Parduotuvė&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Prekė&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;35&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Nuoroda&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;250&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Įprasta_x0020_kaina&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Kaina_x0020_su_x0020_nuolaida&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Siuntimo_x0020_kaina&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;15&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ar_x0020_prekė_x0020_yra_x003F_&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;20&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Tikrinimo_x0020_laikas&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;25&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
       <ui:BuildDataTable.DataTable>
         <OutArgument x:TypeArguments="sd:DataTable">
-          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">Isvestis</CSharpReference>
+          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_34">Isvestis</CSharpReference>
         </OutArgument>
       </ui:BuildDataTable.DataTable>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="521.6,634.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Įvesties dokumento nuskaitymas" sap:VirtualizedContainerService.HintSize="521.6,186.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,556" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,108" sap2010:WorkflowViewState.IdRef="Sequence_21">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard CreateNewFile="False" DisplayName="Atidarom įvesties failą" sap:VirtualizedContainerService.HintSize="451.2,496" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="KainuStebejimas.xlsx">
-              <ueab:ExcelApplicationCard.Body>
-                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,276.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ReadRangeX DisplayName="Nuskaitom parduotuves" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" VisibleOnly="False">
-                      <ueab:ReadRangeX.Range>
-                        <InArgument x:TypeArguments="ue:IReadRangeRef">
-                          <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Excel.Sheet["Parduotuvės"]</CSharpValue>
-                        </InArgument>
-                      </ueab:ReadRangeX.Range>
-                      <ueab:ReadRangeX.SaveTo>
-                        <OutArgument x:TypeArguments="sd:DataTable">
-                          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">ParduotuviuSarasas</CSharpReference>
-                        </OutArgument>
-                      </ueab:ReadRangeX.SaveTo>
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <ueab:ExcelApplicationCard CreateNewFile="False" DisplayName="Atidarom dokumentą" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" KeepExcelFileOpen="True" ResizeWindow="None" WorkbookPath="KainuStebejimas.xlsx">
+                  <ueab:ExcelApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:ReadRangeX DisplayName="Nuskaitom parduotuvių sąrašą" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" VisibleOnly="False">
+                          <ueab:ReadRangeX.Range>
+                            <InArgument x:TypeArguments="ue:IReadRangeRef">
+                              <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Excel.Sheet["Parduotuvės"]</CSharpValue>
+                            </InArgument>
+                          </ueab:ReadRangeX.Range>
+                          <ueab:ReadRangeX.SaveTo>
+                            <OutArgument x:TypeArguments="sd:DataTable">
+                              <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">ParduotuviuSarasas</CSharpReference>
+                            </OutArgument>
+                          </ueab:ReadRangeX.SaveTo>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ueab:ReadRangeX>
+                        <ueab:ReadRangeX DisplayName="Nuskaitom prekių sąrašą" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" VisibleOnly="False">
+                          <ueab:ReadRangeX.Range>
+                            <InArgument x:TypeArguments="ue:IReadRangeRef">
+                              <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Excel.Sheet["Prekės"]</CSharpValue>
+                            </InArgument>
+                          </ueab:ReadRangeX.Range>
+                          <ueab:ReadRangeX.SaveTo>
+                            <OutArgument x:TypeArguments="sd:DataTable">
+                              <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">PrekiuSarasas</CSharpReference>
+                            </OutArgument>
+                          </ueab:ReadRangeX.SaveTo>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ueab:ReadRangeX>
+                      </Sequence>
+                    </ActivityAction>
+                  </ueab:ExcelApplicationCard.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ueab:ExcelApplicationCard>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="si:IOException" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                  <ActivityAction x:TypeArguments="si:IOException">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Catch - IOException" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                    </ueab:ReadRangeX>
-                    <ueab:ReadRangeX DisplayName="Nuskaitom prekes" sap:VirtualizedContainerService.HintSize="416,160" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" VisibleOnly="False">
-                      <ueab:ReadRangeX.Range>
-                        <InArgument x:TypeArguments="ue:IReadRangeRef">
-                          <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Excel.Sheet["Prekės"]</CSharpValue>
-                        </InArgument>
-                      </ueab:ReadRangeX.Range>
-                      <ueab:ReadRangeX.SaveTo>
-                        <OutArgument x:TypeArguments="sd:DataTable">
-                          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">PrekiuSarasas</CSharpReference>
-                        </OutArgument>
-                      </ueab:ReadRangeX.SaveTo>
+                      <ui:KillProcess Process="{x:Null}" AppliesTo="All" ContinueOnError="True" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="417.6,165.6" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="EXCEL" />
+                    </Sequence>
+                  </ActivityAction>
+                </Catch>
+                <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Catch - Exception" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_26">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                    </ueab:ReadRangeX>
-                  </Sequence>
-                </ActivityAction>
-              </ueab:ExcelApplicationCard.Body>
-            </ueab:ExcelApplicationCard>
+                      <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" AppliesTo="All" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="417.6,165.6" sap2010:WorkflowViewState.IdRef="KillProcess_3" ProcessName="EXCEL" />
+                    </Sequence>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+              <TryCatch.Finally>
+                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If sap:VirtualizedContainerService.HintSize="417.6,48" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Condition>
+                      <InArgument x:TypeArguments="x:Boolean">
+                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">ParduotuviuSarasas == null</CSharpValue>
+                      </InArgument>
+                    </If.Condition>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,108" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Įvesties nuskaitymas" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+                          <ueab:ExcelProcessScopeX.Body>
+                            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,444" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ueab:ExcelApplicationCard CreateNewFile="False" DisplayName="Atidarom dokumentą per naujo" sap:VirtualizedContainerService.HintSize="451.2,384" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" KeepExcelFileOpen="True" ResizeWindow="None" WorkbookPath="KainuStebejimas.xlsx">
+                                  <ueab:ExcelApplicationCard.Body>
+                                    <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,164.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ueab:ReadRangeX DisplayName="Nuskaitom parduotuvių sąrašą" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="ReadRangeX_3" VisibleOnly="False">
+                                          <ueab:ReadRangeX.Range>
+                                            <InArgument x:TypeArguments="ue:IReadRangeRef">
+                                              <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">Excel.Sheet["Parduotuvės"]</CSharpValue>
+                                            </InArgument>
+                                          </ueab:ReadRangeX.Range>
+                                          <ueab:ReadRangeX.SaveTo>
+                                            <OutArgument x:TypeArguments="sd:DataTable">
+                                              <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_35">ParduotuviuSarasas</CSharpReference>
+                                            </OutArgument>
+                                          </ueab:ReadRangeX.SaveTo>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ueab:ReadRangeX>
+                                        <ueab:ReadRangeX DisplayName="Nuskaitom prekių sąrašą" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="ReadRangeX_4" VisibleOnly="False">
+                                          <ueab:ReadRangeX.Range>
+                                            <InArgument x:TypeArguments="ue:IReadRangeRef">
+                                              <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">Excel.Sheet["Prekės"]</CSharpValue>
+                                            </InArgument>
+                                          </ueab:ReadRangeX.Range>
+                                          <ueab:ReadRangeX.SaveTo>
+                                            <OutArgument x:TypeArguments="sd:DataTable">
+                                              <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">PrekiuSarasas</CSharpReference>
+                                            </OutArgument>
+                                          </ueab:ReadRangeX.SaveTo>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ueab:ReadRangeX>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ueab:ExcelApplicationCard.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ueab:ExcelApplicationCard>
+                              </Sequence>
+                            </ActivityAction>
+                          </ueab:ExcelProcessScopeX.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ueab:ExcelProcessScopeX>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </TryCatch.Finally>
+            </TryCatch>
           </Sequence>
         </ActivityAction>
       </ueab:ExcelProcessScopeX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ueab:ExcelProcessScopeX>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Kiekvienai prekei, lentelėje..." sap:VirtualizedContainerService.HintSize="521.6,346.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Kiekvienai prekei, lentelėje..." sap:VirtualizedContainerService.HintSize="521.6,1272" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,164.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,1090.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Paimam prekę iš sąrašo" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign DisplayName="Paimam prekę iš sąrašo" sap:VirtualizedContainerService.HintSize="486.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_3">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">Preke</CSharpReference>
@@ -233,13 +454,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Kiekvienai parduotuvei, lentelėje..." sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Kiekvienai parduotuvei, lentelėje..." sap:VirtualizedContainerService.HintSize="486.4,973.6" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,1186.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484.8,800.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -263,13 +484,13 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <Switch x:TypeArguments="x:String" DisplayName="Switch" sap:VirtualizedContainerService.HintSize="451.2,904" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                    <Switch x:TypeArguments="x:String" DisplayName="Atidarom reikiamą parduotuvę" sap:VirtualizedContainerService.HintSize="451.2,355.2" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                       <Switch.Default>
-                        <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </Sequence>
@@ -285,41 +506,11 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence x:Key="pigu.lt" DisplayName="Case &quot;pigu.lt&quot;" sap:VirtualizedContainerService.HintSize="449.6,227.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence x:Key="varle.lt" DisplayName="Case &quot;varle.lt&quot;" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="PiguLT - Invoke Workflow File (PiguLT.xaml)" sap:VirtualizedContainerService.HintSize="416,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="PiguLT.xaml">
-                          <ui:InvokeWorkflowFile.Arguments>
-                            <OutArgument x:TypeArguments="x:String" x:Key="out_likutis">
-                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_30">Likutis</CSharpReference>
-                            </OutArgument>
-                            <OutArgument x:TypeArguments="x:String" x:Key="out_KainaSuNuolaida">
-                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">KainaSuNuolaida</CSharpReference>
-                            </OutArgument>
-                            <OutArgument x:TypeArguments="x:String" x:Key="out_siuntimoKaina">
-                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">SiuntimoKaina</CSharpReference>
-                            </OutArgument>
-                            <OutArgument x:TypeArguments="x:String" x:Key="out_nuoroda">
-                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">Nuoroda</CSharpReference>
-                            </OutArgument>
-                            <OutArgument x:TypeArguments="x:String" x:Key="out_kaina">
-                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">Kaina</CSharpReference>
-                            </OutArgument>
-                            <InArgument x:TypeArguments="x:String" x:Key="in_preke">
-                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">Preke</CSharpValue>
-                            </InArgument>
-                          </ui:InvokeWorkflowFile.Arguments>
-                        </ui:InvokeWorkflowFile>
-                      </Sequence>
-                      <Sequence x:Key="varle.lt" DisplayName="Case &quot;varle.lt&quot;" sap:VirtualizedContainerService.HintSize="449.6,227.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="VarleLT - Invoke Workflow File (VarleLT.xaml)" sap:VirtualizedContainerService.HintSize="416,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="VarleLT.xaml">
@@ -345,10 +536,11 @@
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                       </Sequence>
-                      <Sequence x:Key="lego.com" DisplayName="Case &quot;lego.com&quot;" sap:VirtualizedContainerService.HintSize="449.6,227.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <Sequence x:Key="lego.com" DisplayName="Case &quot;lego.com&quot;" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Lego - Invoke Workflow File (Lego.xaml)" sap:VirtualizedContainerService.HintSize="416,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Lego.xaml">
@@ -374,8 +566,38 @@
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                       </Sequence>
+                      <Sequence x:Key="pigu.lt" DisplayName="Case &quot;pigu.lt&quot;" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="PiguLT - Invoke Workflow File (PiguLT.xaml)" sap:VirtualizedContainerService.HintSize="416,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="PiguLT.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <OutArgument x:TypeArguments="x:String" x:Key="out_likutis">
+                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_30">Likutis</CSharpReference>
+                            </OutArgument>
+                            <OutArgument x:TypeArguments="x:String" x:Key="out_KainaSuNuolaida">
+                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">KainaSuNuolaida</CSharpReference>
+                            </OutArgument>
+                            <OutArgument x:TypeArguments="x:String" x:Key="out_siuntimoKaina">
+                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">SiuntimoKaina</CSharpReference>
+                            </OutArgument>
+                            <OutArgument x:TypeArguments="x:String" x:Key="out_nuoroda">
+                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">Nuoroda</CSharpReference>
+                            </OutArgument>
+                            <OutArgument x:TypeArguments="x:String" x:Key="out_kaina">
+                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">Kaina</CSharpReference>
+                            </OutArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_preke">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">Preke</CSharpValue>
+                            </InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
                     </Switch>
-                    <ui:AddDataRow DataRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="451.2,48" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                    <ui:AddDataRow DataRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="451.2,211.2" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
                       <ui:AddDataRow.ArrayRow>
                         <InArgument x:TypeArguments="s:Object[]">
                           <CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">new object[] { Parduotuve, Preke, Nuoroda, Kaina, KainaSuNuolaida, SiuntimoKaina, Likutis, DateTime.Now }</CSharpValue>
@@ -388,8 +610,8 @@
                       </ui:AddDataRow.DataTable>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:AddDataRow>
@@ -403,8 +625,8 @@
               </ui:ForEachRow.DataTable>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEachRow>
@@ -430,7 +652,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:AddDataColumn>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Apskaičiuojam galutinę kainą kiekvienai eilutei" sap:VirtualizedContainerService.HintSize="521.6,822.4" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Apskaičiuojam galutinę kainą kiekvienai eilutei" sap:VirtualizedContainerService.HintSize="521.6,56.8" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -499,90 +721,20 @@
           <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">Isvestis</CSharpValue>
         </InArgument>
       </ui:ForEachRow.DataTable>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="521.6,1314.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
-      <ueab:ExcelProcessScopeX.Body>
-        <ActivityAction x:TypeArguments="ui:IExcelProcess">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1236" sap2010:WorkflowViewState.IdRef="Sequence_12">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="486.4,1176" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" KeepExcelFileOpen="True" ResizeWindow="None" WorkbookPath="KainuStebejimas.xlsx">
-              <ueab:ExcelApplicationCard.Body>
-                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,956.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ueab:WriteRangeX DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="451.2,220.8" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False">
-                      <ueab:WriteRangeX.Destination>
-                        <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
-                          <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">Excel.Sheet["Kainos"]</CSharpValue>
-                        </InArgument>
-                      </ueab:WriteRangeX.Destination>
-                      <ueab:WriteRangeX.Source>
-                        <InArgument x:TypeArguments="sd:DataTable">
-                          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">Isvestis</CSharpValue>
-                        </InArgument>
-                      </ueab:WriteRangeX.Source>
-                    </ueab:WriteRangeX>
-                    <ueab:CreatePivotTableXv2 DisplayName="Create Pivot Table" sap:VirtualizedContainerService.HintSize="451.2,676" sap2010:WorkflowViewState.IdRef="CreatePivotTableXv2_1" LayoutRowType="Compact" TableName="Kainų palyginimas" ValuesMode="Columns">
-                      <ueab:CreatePivotTableXv2.Body>
-                        <ActivityAction>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,418.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ueab:PivotTableFieldX DisplayName="Pivot Field" FieldName="Prekė" Function="Sum" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="PivotTableFieldX_1" Type="Row" />
-                            <ueab:PivotTableFieldX DisplayName="Pivot Field" FieldName="Parduotuvė" Function="Sum" sap:VirtualizedContainerService.HintSize="416,122.4" sap2010:WorkflowViewState.IdRef="PivotTableFieldX_2" Type="Column" />
-                            <ueab:PivotTableFieldX DisplayName="Pivot Field" FieldName="Galutinė kaina" Function="Min" sap:VirtualizedContainerService.HintSize="416,113.6" sap2010:WorkflowViewState.IdRef="PivotTableFieldX_3" Type="Value" />
-                          </Sequence>
-                        </ActivityAction>
-                      </ueab:CreatePivotTableXv2.Body>
-                      <ueab:CreatePivotTableXv2.DestinationRange>
-                        <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
-                          <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">Excel.Sheet["Kainų suvestinė"]</CSharpValue>
-                        </InArgument>
-                      </ueab:CreatePivotTableXv2.DestinationRange>
-                      <ueab:CreatePivotTableXv2.Range>
-                        <InArgument x:TypeArguments="ue:IReadRangeRef">
-                          <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">Excel.Sheet["Kainos"]</CSharpValue>
-                        </InArgument>
-                      </ueab:CreatePivotTableXv2.Range>
-                    </ueab:CreatePivotTableXv2>
-                  </Sequence>
-                </ActivityAction>
-              </ueab:ExcelApplicationCard.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ueab:ExcelApplicationCard>
-          </Sequence>
-        </ActivityAction>
-      </ueab:ExcelProcessScopeX.Body>
-    </ueab:ExcelProcessScopeX>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Excel - Invoke Workflow File (Excel.xaml)" sap:VirtualizedContainerService.HintSize="521.6,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Excel.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="DuomenuTvarkymas- Invoke Workflow File (DuomenuPalyginimas.xaml)" sap:VirtualizedContainerService.HintSize="521.6,167.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="DuomenuTvarkymas.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="sd:DataTable" x:Key="in_kainos">
-          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">Isvestis</CSharpValue>
+          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">Isvestis</CSharpValue>
         </InArgument>
         <InArgument x:TypeArguments="sd:DataTable" x:Key="in_prekes">
-          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">PrekiuSarasas</CSharpValue>
+          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">PrekiuSarasas</CSharpValue>
         </InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
