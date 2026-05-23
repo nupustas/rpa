@@ -1,0 +1,14 @@
+﻿{
+  "Name": "LEGO® Insiders Price",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "hXpOUfSOokKHSgroPKyd3g",
+  "Reference": "dZFYe9SHv0CKKJnFTJQvrg/hXpOUfSOokKHSgroPKyd3g",
+  "ParentRef": "dZFYe9SHv0CKKJnFTJQvrg/GKRRAhLTtEG03pmdMCVATg",
+  "Created": "2026-05-23T16:50:35.0326941Z",
+  "Updated": "2026-05-23T16:50:35.0326941Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

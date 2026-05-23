@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-kJXNBPtfEeJq2PjafblUQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="lego.com/en-lt/product/hagrid-harrys-motorcycle-ride-76443" DesignTimeRectangle="1404, 573, 86, 38" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Sale Price' class='ProductPrice_priceText__VyKYv ds-heading-md ProductPrice_insiderPrice__0ZSbE' data-test='product-price-insider' /&gt;" Guid="9201d910-8572-497e-8230-1d09afd511ff" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Hagrid™ &amp;amp; Harry&amp;apos;s Motorcycle Ride 76443 | Harry Potter™ | Buy online at the Official LEGO® Shop LT' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="36da368ad9d0784a675715122c8e8006.jpg" xmlns="">0VMkSWVZW402TzZQJnxuJVw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
