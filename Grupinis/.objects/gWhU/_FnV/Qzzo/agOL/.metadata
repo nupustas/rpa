@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Šioje svetainėjeprogra…",
+  "Type": "Element",
+  "Id": "agOLQOXU30Sg0Gwb3vUMvQ",
+  "Reference": "dZFYe9SHv0CKKJnFTJQvrg/agOLQOXU30Sg0Gwb3vUMvQ",
+  "ParentRef": "dZFYe9SHv0CKKJnFTJQvrg/QzzoKrDFq0SDBmO5pvv4_Q",
+  "Created": "2026-05-24T17:02:55.0400882Z",
+  "Updated": "2026-05-24T17:02:55.0400882Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

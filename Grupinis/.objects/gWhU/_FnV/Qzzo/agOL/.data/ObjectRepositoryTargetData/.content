@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GO4f8fFBUkyJ3isk1FeHWg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pigu.lt/lt" DesignTimeRectangle="64, 642, 1791, 421" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='c-consent__table' parentid='consent_block' tag='DIV' /&gt;" Guid="8c36ca48-f586-419d-80ce-faa59084e59f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pigu.lt – internetinė parduotuvė tavo kasdieniams pirkiniams' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="456169f4cb23cabe60be12abd89e0114.jpg" xmlns="">0QW4Riz7OtUexGSpofH__Aw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Leisti visus",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "-Si-oXGo2E-y7qvQOuQz-g",
+  "Reference": "dZFYe9SHv0CKKJnFTJQvrg/-Si-oXGo2E-y7qvQOuQz-g",
+  "ParentRef": "dZFYe9SHv0CKKJnFTJQvrg/QzzoKrDFq0SDBmO5pvv4_Q",
+  "Created": "2026-05-24T17:03:15.0620919Z",
+  "Updated": "2026-05-24T17:03:15.0620919Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
