@@ -143,21 +143,21 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="VarleLT" sap:VirtualizedContainerService.HintSize="995.6,1904.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="VarleLT" sap:VirtualizedContainerService.HintSize="915.6,1949.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch - varle.lt atidarymas" sap:VirtualizedContainerService.HintSize="488,1881.6" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch - varle.lt atidarymas" sap:VirtualizedContainerService.HintSize="488,1926.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Atidaryti Varle.lt" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1677.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0b0dd988-bee8-452c-b1d5-69524b5b53a0" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Atidaryti Varle.lt" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1722.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0b0dd988-bee8-452c-b1d5-69524b5b53a0" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1507.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1552" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="raw_kaina" />
                 </Sequence.Variables>
@@ -558,7 +558,7 @@
                     </OutArgument>
                   </uix:NGetUrl.CurrentUrl>
                 </uix:NGetUrl>
-                <Assign DisplayName="Priskiriam siuntimo kainą" sap:VirtualizedContainerService.HintSize="451.2,165.6" sap2010:WorkflowViewState.IdRef="Assign_16">
+                <Assign sap2010:Annotation.AnnotationText="Siuntimo kaina nuo prekės nesikeičia, tai ją tiesiog nustatome kiekvienai parduotuvei" DisplayName="Priskiriam siuntimo kainą" sap:VirtualizedContainerService.HintSize="451.2,210.4" sap2010:WorkflowViewState.IdRef="Assign_16">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">
                       <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">out_siuntimoKaina</CSharpReference>
@@ -573,6 +573,7 @@
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>

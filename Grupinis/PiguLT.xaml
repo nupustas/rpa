@@ -144,7 +144,7 @@
       <AssemblyReference>UIAutomationTypes</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PiguLT" sap:VirtualizedContainerService.HintSize="995.6,3132" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="PiguLT" sap:VirtualizedContainerService.HintSize="915.6,3288" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="0" Name="raw_kaina" />
     </Sequence.Variables>
@@ -153,7 +153,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch pigu.lt atidarymas" sap:VirtualizedContainerService.HintSize="523.2,3108.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch pigu.lt atidarymas" sap:VirtualizedContainerService.HintSize="523.2,3264.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -161,16 +161,17 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Pigu.lt – internetinė parduotuvė tavo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="521.6,2672.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7f7fc1a1-fa2f-4854-837b-e0f3a1d52c5e" Timeout="5" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Pigu.lt – internetinė parduotuvė tavo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="521.6,2828.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7f7fc1a1-fa2f-4854-837b-e0f3a1d52c5e" Timeout="5" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,2502.4" sap2010:WorkflowViewState.IdRef="Sequence_20">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,2658.4" sap2010:WorkflowViewState.IdRef="Sequence_20">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <uix:NSetText DisplayName="Įrašom prekės pavadinimą" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,56.8" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="7f7fc1a1-fa2f-4854-837b-e0f3a1d52c5e" Version="V5">
@@ -327,16 +328,16 @@
                     </Sequence>
                   </TryCatch.Finally>
                 </TryCatch>
-                <uix:NCheckState DisplayName="Patikrinam ar yra &quot;pigu plus kaina&quot;" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,1732" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="7f7fc1a1-fa2f-4854-837b-e0f3a1d52c5e" Timeout="2" Version="V5">
+                <uix:NCheckState DisplayName="Patikrinam ar yra &quot;pigu plus kaina&quot;" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,1782.4" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="7f7fc1a1-fa2f-4854-837b-e0f3a1d52c5e" Timeout="2" Version="V5">
                   <uix:NCheckState.IfExists>
-                    <Sequence DisplayName="Jei yra, skaitom ją" sap:VirtualizedContainerService.HintSize="484.8,684.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <Sequence DisplayName="Jei yra, skaitom ją" sap:VirtualizedContainerService.HintSize="484.8,396" sap2010:WorkflowViewState.IdRef="Sequence_22">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NGetText DisplayName="Nuskaitom nuolaidine kainą" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,142.4" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="7f7fc1a1-fa2f-4854-837b-e0f3a1d52c5e" Version="V5">
+                      <uix:NGetText DisplayName="Nuskaitom nuolaidine kainą" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="7f7fc1a1-fa2f-4854-837b-e0f3a1d52c5e" Version="V5">
                         <uix:NGetText.Target>
                           <uix:TargetAnchorable BrowserURL="pigu.lt/lt/kudikiams-ir-vaikams/zaislai/konstruktoriai-ir-kaladeles/lego-editions-football-fifa-world-cup-oficiali" ContentHash="7RWAx58IekKbb0cb6BO0UQ" DesignTimeRectangle="1478, 471, 151, 40" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='c-price h-price--x-large h-price--loyalty' uipath-html-title='Lojalumo kaina – nustatyta prekės kaina, kuri galioja tik „Pigu PLUS“ lojalumo programos nariams.' /&gt;" Guid="6d018b1b-ea75-48f7-8cc8-0db12300c500" InformativeScreenshot="52af2d567fe81aa76f252cd88eeb456d.jpg" Reference="dZFYe9SHv0CKKJnFTJQvrg/v8JOmTuAK0OrxaQ64iFmNw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO® Editions Football „FIFA World Cup™“ oficiali taurė 43020 | pigu.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                         </uix:NGetText.Target>
@@ -345,8 +346,14 @@
                             <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_76">raw_kaina</CSharpReference>
                           </OutArgument>
                         </uix:NGetText.TextString>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
                       </uix:NGetText>
-                      <Assign DisplayName="Apdorojam kainą su nuolaida" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_58">
+                      <Assign DisplayName="Apdorojam kainą su nuolaida" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="Assign_58">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">
                             <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_77">out_KainaSuNuolaida</CSharpReference>
@@ -357,8 +364,14 @@
                             <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_89">System.Text.RegularExpressions.Regex.Replace(raw_kaina, @"\D*(\d+)(\d{2})\D*", "$1.$2")</CSharpValue>
                           </InArgument>
                         </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
                       </Assign>
-                      <uix:NGetText DisplayName="Taippat skaitom 'Įprasta kaina'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,142.4" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="7f7fc1a1-fa2f-4854-837b-e0f3a1d52c5e" Version="V5">
+                      <uix:NGetText DisplayName="Taippat skaitom 'Įprasta kaina'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="7f7fc1a1-fa2f-4854-837b-e0f3a1d52c5e" Version="V5">
                         <uix:NGetText.Target>
                           <uix:TargetAnchorable BrowserURL="pigu.lt/lt/kudikiams-ir-vaikams/zaislai/konstruktoriai-ir-kaladeles/lego-editions-football-fifa-world-cup-oficiali" ContentHash="vnMJ-nnIkUuLmiD7bT5MFQ" DesignTimeRectangle="1678, 638, 91, 40" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='c-price h-price--x-large' matching:class='fuzzy' fuzzylevel:class='0.0' parentclass='c-product__price-block' matching:parentclass='fuzzy' fuzzylevel:parentclass='0.0' /&gt;" Guid="30b03e46-dbe6-4edc-90a8-c1254c084e8d" InformativeScreenshot="599969a3b3a70240ae7273faf838a1bf.jpg" Reference="dZFYe9SHv0CKKJnFTJQvrg/xkLAuTbofEaNiw6P-GThnQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO® Editions Football „FIFA World Cup™“ oficiali taurė 43020 | pigu.lt' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None" />
                         </uix:NGetText.Target>
@@ -367,6 +380,12 @@
                             <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_78">raw_kaina</CSharpReference>
                           </OutArgument>
                         </uix:NGetText.TextString>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
                       </uix:NGetText>
                       <Assign DisplayName="Apvalom įprastą kainą" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="Assign_59">
                         <Assign.To>
@@ -389,7 +408,7 @@
                     </Sequence>
                   </uix:NCheckState.IfExists>
                   <uix:NCheckState.IfNotExists>
-                    <Sequence DisplayName="Jei nėra, skaitom įprastą" sap:VirtualizedContainerService.HintSize="484.8,702.4" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                    <Sequence DisplayName="Jei nėra, skaitom įprastą" sap:VirtualizedContainerService.HintSize="484.8,1041.6" sap2010:WorkflowViewState.IdRef="Sequence_23">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -408,7 +427,7 @@
                           </InArgument>
                         </Assign.Value>
                       </Assign>
-                      <TryCatch DisplayName="Try Catch - kainos nuskaitymas" sap:VirtualizedContainerService.HintSize="451.2,302.4" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                      <TryCatch DisplayName="Try Catch - kainos nuskaitymas" sap:VirtualizedContainerService.HintSize="451.2,641.6" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -416,7 +435,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <TryCatch.Try>
-                          <uix:NGetText DisplayName="Get iprasta kaina" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="7f7fc1a1-fa2f-4854-837b-e0f3a1d52c5e" Timeout="3" Version="V5">
+                          <uix:NGetText DisplayName="Get iprasta kaina" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,110.4" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="7f7fc1a1-fa2f-4854-837b-e0f3a1d52c5e" Timeout="3" Version="V5">
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="pigu.lt/lt/kudikiams-ir-vaikams/zaislai/konstruktoriai-ir-kaladeles/lego-minecraft-lape-21588" ContentHash="U-pNepqZcUWyCgwTipbFqQ" DesignTimeRectangle="1478, 526, 74, 40" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' tag='SPAN' class='c-price h-price--x-large' parentclass='c-product__price-block' /&gt;" Guid="b58b372f-7fe7-44a2-a1bb-0d1f33063087" InformativeScreenshot="a3d091f2b6e8617bf729a61bb8e63b55.jpg" Reference="dZFYe9SHv0CKKJnFTJQvrg/7WJHOPumMkecO27AtUwgQg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LEGO - Minecraft - The Fox (21588) | pigu.lt' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                             </uix:NGetText.Target>
@@ -427,7 +446,7 @@
                             </uix:NGetText.TextString>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -439,10 +458,10 @@
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="uue:NodeNotFoundException" Name="exception" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Catch - NodeNotFoundException" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                              <Sequence DisplayName="Catch - NodeNotFoundException" sap:VirtualizedContainerService.HintSize="449.6,278.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -563,7 +582,7 @@
                     </OutArgument>
                   </uix:NGetUrl.CurrentUrl>
                 </uix:NGetUrl>
-                <Assign DisplayName="Nustatom siuntimo kainą" sap:VirtualizedContainerService.HintSize="486.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_52">
+                <Assign sap2010:Annotation.AnnotationText="Siuntimo kaina nuo prekės nesikeičia, tai ją tiesiog nustatome kiekvienai parduotuvei" DisplayName="Nustatom siuntimo kainą" sap:VirtualizedContainerService.HintSize="486.4,101.6" sap2010:WorkflowViewState.IdRef="Assign_52">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">
                       <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_88">out_siuntimoKaina</CSharpReference>
@@ -578,24 +597,26 @@
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
-                <Assign sap:VirtualizedContainerService.HintSize="486.4,165.6" sap2010:WorkflowViewState.IdRef="Assign_53">
+                <Assign sap2010:Annotation.AnnotationText="Pigu.lt nerodo prekės likučio sandelyje (rodo tik fizinėse parduotuvėse, tai mum neaktualu), tai jei prekė rasta, reiškia ji yra" DisplayName="Nustatom likutį" sap:VirtualizedContainerService.HintSize="486.4,226.4" sap2010:WorkflowViewState.IdRef="Assign_69">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">
-                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_89">out_likutis</CSharpReference>
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_90">out_likutis</CSharpReference>
                     </OutArgument>
                   </Assign.To>
                   <Assign.Value>
                     <InArgument x:TypeArguments="x:String">
-                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98">"Yra"</CSharpValue>
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">"Yra"</CSharpValue>
                     </InArgument>
                   </Assign.Value>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
@@ -758,7 +779,7 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign DisplayName="Priskiriam kainą" sap:VirtualizedContainerService.HintSize="452.8,56.8" sap2010:WorkflowViewState.IdRef="Assign_37">
+              <Assign DisplayName="Priskiriam kainą" sap:VirtualizedContainerService.HintSize="417.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_37">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_56">out_kaina</CSharpReference>
@@ -776,7 +797,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Priskiriam kainą su nuolaida" sap:VirtualizedContainerService.HintSize="452.8,56.8" sap2010:WorkflowViewState.IdRef="Assign_38">
+              <Assign DisplayName="Priskiriam kainą su nuolaida" sap:VirtualizedContainerService.HintSize="417.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_38">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_57">out_KainaSuNuolaida</CSharpReference>
@@ -794,7 +815,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Priskiriam nuorodą" sap:VirtualizedContainerService.HintSize="452.8,56.8" sap2010:WorkflowViewState.IdRef="Assign_39">
+              <Assign DisplayName="Priskiriam nuorodą" sap:VirtualizedContainerService.HintSize="417.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_39">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_58">out_nuoroda</CSharpReference>
@@ -812,7 +833,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Priskiriam likutį" sap:VirtualizedContainerService.HintSize="452.8,56.8" sap2010:WorkflowViewState.IdRef="Assign_40">
+              <Assign DisplayName="Priskiriam likutį" sap:VirtualizedContainerService.HintSize="417.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_40">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_59">out_likutis</CSharpReference>
@@ -830,7 +851,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Priskiriam siuntimo kainą" sap:VirtualizedContainerService.HintSize="452.8,48" sap2010:WorkflowViewState.IdRef="Assign_41">
+              <Assign DisplayName="Priskiriam siuntimo kainą" sap:VirtualizedContainerService.HintSize="417.6,48" sap2010:WorkflowViewState.IdRef="Assign_41">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_60">out_siuntimoKaina</CSharpReference>
@@ -859,7 +880,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" AppliesTo="All" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="488,165.6" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="Chrome" />
+          <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" AppliesTo="All" DisplayName="Uždarom chrome" sap:VirtualizedContainerService.HintSize="488,165.6" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="Chrome" />
         </Sequence>
       </TryCatch.Finally>
     </TryCatch>
